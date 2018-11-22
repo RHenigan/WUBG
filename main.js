@@ -4,23 +4,30 @@ const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 
 let mainWindow
-
+let TEST_ENV = true;
 
 app.on('ready', _ => {
-    var electronScreen = electron.screen;
-    var displays = electronScreen.getAllDisplays();
-    var externalDisplay = null;
+    if (TEST_ENV == false) {
+        var electronScreen = electron.screen;
+        var displays = electronScreen.getAllDisplays();
+        var externalDisplay = null;
     
-    for (i in displays) {
-        if (displays[i].bounds.x != 0 || displays[i].bounds.y != 0) {
-            externalDisplay = displays[i];
-            break;
+        for (i in displays) {
+            if (displays[i].bounds.x != 0 || displays[i].bounds.y != 0) {
+                externalDisplay = displays[i];
+                break;
+            }
         }
-    }
 
-    if(externalDisplay) {
-        player_window = new BrowserWindow({})
-        player_window.setFullScreen(true);
+        if(externalDisplay) {
+            player_window = new BrowserWindow({})
+            player_window.setFullScreen(true);
+        }
+    } else {
+	    player_window = new BrowserWindow({
+		    width: 500,
+		    height: 500
+        })
     }
 
 	dm_windows = new BrowserWindow({
