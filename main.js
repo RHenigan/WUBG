@@ -18,7 +18,10 @@ app.on('ready', _ => {
     }
 
     if(externalDisplay) {
-        player_window = new BrowserWindow({})
+        player_window = new BrowserWindow({
+	        x: externalDisplay.bounds.x + 50,
+            y: externalDisplay.bounds.y + 50
+        })
         player_window.setFullScreen(true);
     } else {
 	    player_window = new BrowserWindow({
