@@ -17,5 +17,5 @@ app.on('ready', _ => {
         width:500,
         height:500
     })
-    gameModule.gameTimer();
+    gameModule.playerCounter();
 })
