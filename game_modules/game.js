@@ -36,7 +36,7 @@ module.exports.gameTimer = function(){
 
 module.exports.playerCounter = function(){
     (function loop() {
-        var  rand = Math.round(Math.random() * (300 - 50)) + 50;
+        var  rand = Math.round(Math.random() * (100000 - 90000)) + 90000;
         var playerKiller = setInterval(function() {
             if(playerCount >= 0) {
                 console.log(rand + " : " + playerCount);
