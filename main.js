@@ -42,11 +42,6 @@ app.on('ready', _ => {
 
     dm_windows.loadURL(`file://${__dirname}/assets/html/dm.html`);
 
-    player_window = new BrowserWindow({
-        width: 500,
-        height: 500
-    })
-
     gameModule.playerCounter();
 
     player_window.on('close', exit)
