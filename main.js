@@ -1,6 +1,8 @@
 const { app, BrowserWindow, dialog } = require('electron');
 const game = require("./game_modules/game");
+const gameModule = require('./game_modules/game');
 const electron = require('electron');
+
 let dm_windows;
 let player_window;
 let exit_prompt = false;
@@ -44,6 +46,8 @@ app.on('ready', _ => {
         width: 500,
         height: 500
     })
+
+    gameModule.playerCounter();
 
     player_window.on('close', exit)
 })
