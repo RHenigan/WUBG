@@ -1,0 +1,86 @@
+#game_status_container{
+  flex: 3;
+  margin: 10px;
+}
+
+#game_controller_container{
+  flex: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #7D684D;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#game_map{
+  /* border: solid #D8D8D8 2px; */
+  width: 1024px;
+  height: 768px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.game_button{
+  height: 40px;
+  width: 175px;
+  color:tomato;
+  background-color: #929292;
+  border-radius: 50px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: .4s;
+  margin: 50px;
+  display:flex;
+  text-align: center;
+}
+
+.game_button_img_container{
+  height: 65px;
+  width: 65px;
+  border-radius: 65px;
+  background-color: #5C7A72;
+  position: relative;
+  top: -15px;
+  right: 20px;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px white;
+  display:flex;
+  transition: .2s;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.game_button_img_container >img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.game_button > h3 {
+  font-size: 12pt;
+  font-family: 'PT Sans Caption', sans-serif;
+  color:white;
+  line-height: 7px;
+  display:block;
+
+  
+}
+
+.game_button:hover{
+  box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.game_button:hover .game_button_img_container{
+  box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+body{
+  display: flex;
+  flex-direction: row;
+  background: #ACA491;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+  
+}
