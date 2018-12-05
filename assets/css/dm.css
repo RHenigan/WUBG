@@ -81,4 +81,6 @@ body{
   background: #ACA491;
   margin: 0;
   overflow: hidden;
+  user-select: none;
+  
 }
