@@ -21,6 +21,43 @@
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+.killing_player{
+  font-size: 16px;
+  color: yellow;
+  position: absolute;
+  top: 70px;
+  right: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.action_player{
+  color: white;
+}
+
+.killed_player{
+  color: red;
+}
+
+.kill_countdown{
+  font-size: 36px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: white;
+}
+
+.alive_text{
+  font-size: 20px;
+  position: absolute;
+  top: 60px;
+  right: 16px;
+  color: white;
+}
+
+.img_container{
+  position: relative;
+}
+
 .game_button{
   height: 40px;
   width: 175px;
