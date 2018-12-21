@@ -25,9 +25,33 @@
   font-size: 16px;
   color: yellow;
   position: absolute;
-  top: 70px;
   right: 16px;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.kfeed_1{
+  position: absolute;
+  top: 70px
+}
+
+.kfeed_2{
+  position: absolute;
+  top: 90px
+}
+
+.kfeed_3{
+  position: absolute;
+  top: 110px
+}
+
+.kfeed_4{
+  position: absolute;
+  top: 130px
+}
+
+.kfeed_5{
+  position: absolute;
+  top: 150px
 }
 
 .action_player{
